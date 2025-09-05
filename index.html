@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi‑step Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>+Multi‑step Form</h1>
+    <div class="Multi-Step">
+    <button class="rest" onclick="localStorage.clear(); location.reload()">Rest</button>
+    <div class="progress-Bar">
+        <div class="section">
+          <div class="step-1">1</div><span>Account</span>
+          <div class="step-2">2</div><span>Profile</span>
+          <div class="step-3">3</div><span>Preferences</span>
+          <div class="step-4">4</div><span>Review</span>
+        </div>
+    </div>
+    <div class="contenir">
+        <form class="Account" onsubmit="return false">
+        <div class="info">
+        <label for="email"><span>Email</span><br><input type="text" placeholder="@Email" required id="email"></label>
+        <p class="error" style="color: red; display: none;" >please fill all field</p>
+        <label for="password"><span>Password</span><br><input type="password" placeholder="password" required id="password"></label>
+        </div>
+         <div class="profile">
+        <label for="fullname"><span>Fullname</span><br><input type="text" placeholder="Fullname" id="fullname" required></label>
+        <label for="contact"><span>Contact</span><br><input type="text" placeholder="Contact" id="contact" required></label>
+        <label for="city1"><span>City</span><br><input type="text" placeholder="City" id="city" required></label>
+         </div>
+         <div class="preference">
+         <label for="first"><span>First</span><br><input type="text" placeholder="First Name" id="first" required></label>
+         <label for="last"><span>Last</span><br></b><input type="text" placeholder="Last Name" id="last" required></label>
+         <label for="email2"><span>@Email</span><br><input type="text" placeholder="@Email" id="email1" required></label>
+         <label for="password2"><span>Password</span><br><input type="password" placeholder="password" id="password" required></label>
+         <label for="contact2"><span>Contact</span><br><input type="text" placeholder="Enter Contact" id="contact1" required></label>
+         <label for="city2"><span>City</span><br><input type="text" placeholder="Enter City" id="city1" required></label>
+         </div>
+         <div class="Review">
+            <h3>Review Your Details</h3>
+            <p><strong>Email:</strong> <span id="review-email"></span></p>
+            <p><strong>Fullname:</strong> <span id="review-fullname"></span></p>
+            <p><strong>Contact:</strong> <span id="review-contact"></span></p>
+            <p><strong>City:</strong> <span id="review-city"></span></p>
+         </div>
+         <div class="Btn">
+         <button class="Back">Back</button>
+        <button class="Next">Next</button>
+         </div>
+        </div>
+        </form>
+    </div>
+    </div>
+    <script src="multi.js"></script>
+</body>
+</html>

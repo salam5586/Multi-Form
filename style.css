@@ -1,0 +1,218 @@
+*{
+    padding: 0px;
+    margin: 0;
+    color: white;
+   font-family: Arial, Helvetica, sans-serif;
+ }
+body{
+    background-color: #000000;
+    padding: 102px;
+}
+h1{
+    margin-left: 10%;
+}
+.rest{
+    height: 40px;
+    width: 100px;
+    background-color: #2196f3;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-left: 80%;
+}
+.progress-Bar{
+    height: 100px;
+    width: 90%;
+    margin-left: 10%;
+    background-color: #0a0134;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section{
+    height: 90px;
+    width:99%;
+    background-color: #020009;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.step-1,.step-2,.step-3, .step-4{
+   height: 40px;
+   width: 40px;
+   background-color: #0e062c;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}
+.active {
+    background-color: #4caf50; /* green */
+    color: white;
+  }
+  .completed {
+    background-color: #2196f3; /* blue */
+    color: white;
+  }
+.contenir{
+     height: 250px;
+     width: 90%;
+     margin-left: 10%;
+     margin-top: 20px;
+     background-color: #0e062c;
+     border-radius: 20px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.Account{
+    height: 230px;
+    width: 99%;
+    background-color: #020009;
+    border-radius: 20px;
+}
+.info{
+ height: 180px;
+ width: 100%;
+    display: flex;
+ align-items: center; 
+ justify-content: space-evenly; 
+
+}
+#email,#email1,#fullname,#contact,#contact1,#city1, #password, #city,#first,#last{
+    height: 45px;
+    width: 350px;
+    padding-left:5px;
+    border-radius: 10px;
+    font-size: 15px;
+    border: none;
+    background-color: #0a0134;
+    transition: all 0.5s ease;
+}
+#email:hover,
+ #password:hover,
+ #fullname:hover,
+ #contact:hover,
+ #city:hover,#first:hover,#last:hover{
+    background-color: white;
+    color: black;
+}
+.profile{
+    height: 210px;
+    width: 100%;
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+     display: none; 
+}
+.preference{
+    height: 180px; 
+    width: 100%;
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 4fr);
+     display: none ; 
+}
+ .Review{
+    height: 180px;
+    width: 100%;
+    margin-left: 20px;
+    display: grid;
+    gap: 10;
+    display: none;
+} 
+.Next{
+    height: 40px;
+    width: 100px;
+    background-color: #16075d;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.Back{
+    height: 40px;
+    width: 100px;
+    background-color: #16094e;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 50px;
+}
+.Btn{
+ height: 60px;
+ width: 100%;
+ display: flex;
+ 
+ justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+
+    body {
+      padding: 10px;
+    }
+  
+    .progress-Bar {
+      width: 95%;
+      height: 60px;
+    }
+  
+    .section {
+      font-size: 14px;
+    }
+  
+    .step-1, .step-2, .step-3, .step-4 {
+      height: 28px;
+      width: 28px;
+      font-size: 12px;
+    }
+  
+    .contenir {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    #email,#email1,#fullname,#contact,#contact1,#city1, #password, #city,#first,#last{
+      width: 100%;
+      font-size: 14px;
+    }
+    
+    .info, .profile, .preference, .Review {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .buttons {
+      text-align: center;
+    }
+    .Next, .Back {
+      width: 100px;
+      margin: 10px 5px 0;
+    }
+  
+    .Review h3 {
+      font-size: 16px;
+    }
+    .Review p {
+      font-size: 14px;
+    }
+  }
